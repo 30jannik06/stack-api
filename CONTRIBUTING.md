@@ -3,6 +3,7 @@
 Thanks for taking the time to contribute! Here's how to get started.
 
 ## Development Setup
+
 ```bash
 git clone https://github.com/30jannik06/stack-api.git
 cd stack-api
@@ -12,6 +13,7 @@ npm run dev
 ```
 
 ## Project Structure
+
 ```
 stack-api/
 ├── app/
@@ -50,12 +52,12 @@ stack-api/
 
 ## Scripts
 
-| Command | Description |
-|---|---|
-| `npm run dev` | Start dev server |
-| `npm run build` | Build for production |
-| `npm run lint` | Run ESLint |
-| `npm run format` | Run Prettier |
+| Command          | Description          |
+| ---------------- | -------------------- |
+| `npm run dev`    | Start dev server     |
+| `npm run build`  | Build for production |
+| `npm run lint`   | Run ESLint           |
+| `npm run format` | Run Prettier         |
 
 ## Pull Request Checklist
 

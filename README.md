@@ -41,6 +41,7 @@ Fetch data from Discord, GitHub, Twitch, Steam and NPM — all from one place.
 ## Getting Started
 
 ### 1. Clone & Install
+
 ```bash
 git clone https://github.com/30jannik06/stack-api.git
 cd stack-api
@@ -48,26 +49,29 @@ npm install
 ```
 
 ### 2. Environment Variables
+
 ```bash
 cp .env.example .env.local
 ```
 
-| Variable | Required | Where to get it |
-|---|---|---|
-| `DISCORD_BOT_TOKEN` | ✅ | [discord.com/developers](https://discord.com/developers/applications) |
-| `GITHUB_TOKEN` | ⚠️ optional | [github.com/settings/tokens](https://github.com/settings/tokens) |
-| `TWITCH_CLIENT_ID` | ✅ Twitch | [dev.twitch.tv/console](https://dev.twitch.tv/console) |
-| `TWITCH_CLIENT_SECRET` | ✅ Twitch | [dev.twitch.tv/console](https://dev.twitch.tv/console) |
-| `STEAM_API_KEY` | ✅ Steam | [steamcommunity.com/dev/apikey](https://steamcommunity.com/dev/apikey) |
+| Variable               | Required    | Where to get it                                                        |
+| ---------------------- | ----------- | ---------------------------------------------------------------------- |
+| `DISCORD_BOT_TOKEN`    | ✅          | [discord.com/developers](https://discord.com/developers/applications)  |
+| `GITHUB_TOKEN`         | ⚠️ optional | [github.com/settings/tokens](https://github.com/settings/tokens)       |
+| `TWITCH_CLIENT_ID`     | ✅ Twitch   | [dev.twitch.tv/console](https://dev.twitch.tv/console)                 |
+| `TWITCH_CLIENT_SECRET` | ✅ Twitch   | [dev.twitch.tv/console](https://dev.twitch.tv/console)                 |
+| `STEAM_API_KEY`        | ✅ Steam    | [steamcommunity.com/dev/apikey](https://steamcommunity.com/dev/apikey) |
 
 > `GITHUB_TOKEN` is optional but increases the rate limit from **60 → 5000 requests/hour**.
 
 ### 3. Run locally
+
 ```bash
 npm run dev
 ```
 
 ### 4. Deploy to Vercel
+
 ```bash
 npx vercel
 ```
@@ -79,6 +83,7 @@ Add your environment variables in **Vercel Dashboard → Project → Settings �
 ## API Reference
 
 ### Discord
+
 ```
 GET /api/discord/user/:id
 GET /api/discord/avatar/:id?size=256
@@ -93,22 +98,26 @@ GET /api/discord/invite/:code
 > `/guild/:id` requires your bot to be a member of that server
 
 ### GitHub
+
 ```
 GET /api/github/user/:username
 GET /api/github/repo/:owner/:repo
 ```
 
 ### NPM
+
 ```
 GET /api/npm/:package
 ```
 
 ### Twitch
+
 ```
 GET /api/twitch/user/:username
 ```
 
 ### Steam
+
 ```
 GET /api/steam/user/:steamid
 ```
@@ -119,12 +128,12 @@ GET /api/steam/user/:steamid
 
 stack-api works on any platform that supports Next.js:
 
-| Platform | Notes |
-|---|---|
-| **Vercel** | Recommended – zero config |
+| Platform    | Notes                         |
+| ----------- | ----------------------------- |
+| **Vercel**  | Recommended – zero config     |
 | **Railway** | Great for bots + API together |
-| **Fly.io** | Free tier available |
-| **VPS** | `npm run build && npm start` |
+| **Fly.io**  | Free tier available           |
+| **VPS**     | `npm run build && npm start`  |
 
 ---
 

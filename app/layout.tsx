@@ -6,14 +6,10 @@ export const metadata: Metadata = {
   description: "A modular API built with Next.js",
 };
 
-export default function RootLayout({
-                                     children,
-                                   }: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-      <html lang="en">
+    <html lang="en">
       <body>{children}</body>
-      </html>
+    </html>
   );
 }

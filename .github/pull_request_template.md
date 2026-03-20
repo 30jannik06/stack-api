@@ -2,11 +2,12 @@
 
 ## Endpoints added / changed
 
-| Method | Path | Description |
-|---|---|---|
-| GET | `/api/...` | ... |
+| Method | Path       | Description |
+| ------ | ---------- | ----------- |
+| GET    | `/api/...` | ...         |
 
 ## Checklist
+
 - [ ] TypeScript types korrekt
 - [ ] Fehlerbehandlung vorhanden
 - [ ] Cache-Control Header gesetzt
