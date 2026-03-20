@@ -128,6 +128,12 @@ stack-api works on any platform that supports Next.js:
 
 ---
 
+## Changelog
+
+See [CHANGELOG.md](./CHANGELOG.md) for all releases.
+
+---
+
 ## License
 
 MIT © [30jannik06](https://github.com/30jannik06)

@@ -76,6 +76,12 @@ export default function Home() {
                         </svg>
                         GitHub
                     </a>
+                    <Link
+                        href="/changelog"
+                        style={{ fontSize: 13, padding: "6px 14px", borderRadius: 8, border: "1px solid #333", color: "inherit", textDecoration: "none" }}
+                    >
+                        Changelog
+                    </Link>
                 </div>
             </div>
 
