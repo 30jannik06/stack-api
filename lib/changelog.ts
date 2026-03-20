@@ -1,5 +1,15 @@
 export const changelog = [
     {
+        version: "0.3.0",
+        date: "2026-03-20",
+        changes: {
+            added: [
+                "/health page – visual health check for all configured services",
+                "Discord: avatar_decoration field added to /api/discord/user/:id and /api/discord/profile/:id",
+            ],
+        },
+    },
+    {
         version: "0.2.0",
         date: "2026-03-20",
         changes: {
