@@ -83,13 +83,13 @@ Add your environment variables in **Vercel Dashboard → Project → Settings �
 ## API Reference
 
 ### Discord
-
 ```
 GET /api/discord/user/:id
 GET /api/discord/avatar/:id?size=256
 GET /api/discord/banner/:id
 GET /api/discord/banner/:id/redirect?size=600
 GET /api/discord/presence/:id
+GET /api/discord/profile/:id
 GET /api/discord/guild/:id
 GET /api/discord/invite/:code
 ```
