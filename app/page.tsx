@@ -85,6 +85,19 @@ export default function Home() {
           >
             Changelog
           </Link>
+            <Link
+                href="/health"
+                style={{
+                    fontSize: 13,
+                    padding: "6px 14px",
+                    borderRadius: 8,
+                    border: "1px solid #333",
+                    color: "inherit",
+                    textDecoration: "none"
+                }}
+            >
+                Health
+            </Link>
         </div>
       </div>
 
